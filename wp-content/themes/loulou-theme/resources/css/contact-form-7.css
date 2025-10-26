@@ -1,0 +1,203 @@
+/* Contact Form 7 Custom Styling */
+.wpcf7-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+/* Row layouts */
+.wpcf7-form .form-row {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+.wpcf7-form .form-row.two-columns {
+    grid-template-columns: 1fr 1fr;
+}
+
+@media (max-width: 768px) {
+    .wpcf7-form .form-row.two-columns {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Form groups */
+.wpcf7-form .form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Labels */
+.wpcf7-form label {
+    display: block;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #374151;
+    margin-bottom: 0.5rem;
+}
+
+.dark .wpcf7-form label {
+    color: #d1d5db;
+}
+
+/* Input fields */
+.wpcf7-form input[type="text"],
+.wpcf7-form input[type="email"],
+.wpcf7-form input[type="tel"],
+.wpcf7-form select,
+.wpcf7-form textarea {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 1px solid #d1d5db;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    background-color: white;
+    color: #111827;
+    transition: all 0.2s;
+}
+
+.wpcf7-form input[type="text"]:focus,
+.wpcf7-form input[type="email"]:focus,
+.wpcf7-form input[type="tel"]:focus,
+.wpcf7-form select:focus,
+.wpcf7-form textarea:focus {
+    outline: none;
+    border-color: transparent;
+    box-shadow: 0 0 0 2px #f43f5e;
+}
+
+/* Dark mode inputs */
+.dark .wpcf7-form input[type="text"],
+.dark .wpcf7-form input[type="email"],
+.dark .wpcf7-form input[type="tel"],
+.dark .wpcf7-form select,
+.dark .wpcf7-form textarea {
+    background-color: #374151;
+    border-color: #4b5563;
+    color: white;
+}
+
+.dark .wpcf7-form input[type="text"]::placeholder,
+.dark .wpcf7-form input[type="email"]::placeholder,
+.dark .wpcf7-form input[type="tel"]::placeholder,
+.dark .wpcf7-form textarea::placeholder {
+    color: #9ca3af;
+}
+
+/* Textarea specific */
+.wpcf7-form textarea {
+    resize: none;
+    min-height: 150px;
+}
+
+/* Submit button */
+.wpcf7-form input[type="submit"] {
+    background: linear-gradient(to right, #f43f5e, #fb923c);
+    color: white;
+    font-weight: bold;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s;
+    transform: scale(1);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    display: block;
+}
+
+.wpcf7-form input[type="submit"]:hover {
+    background: linear-gradient(to right, #e11d48, #ea580c);
+    transform: scale(1.05);
+}
+
+.wpcf7-form input[type="submit"]:active {
+    transform: scale(0.98);
+}
+
+/* Required asterisk */
+.wpcf7-form .required-asterisk {
+    color: #ef4444;
+    margin-left: 2px;
+}
+
+/* Validation messages */
+.wpcf7-form .wpcf7-not-valid-tip {
+    color: #ef4444;
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+}
+
+.wpcf7-form .wpcf7-validation-errors {
+    background-color: #fef2f2;
+    border: 1px solid #fecaca;
+    color: #dc2626;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Success message */
+.wpcf7-form .wpcf7-mail-sent-ok {
+    background-color: #f0fdf4;
+    border: 1px solid #bbf7d0;
+    color: #166534;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.wpcf7-form .wpcf7-mail-sent-ok::before {
+    content: "✅ ";
+}
+
+/* Error message */
+.wpcf7-form .wpcf7-mail-sent-ng {
+    background-color: #fef2f2;
+    border: 1px solid #fecaca;
+    color: #dc2626;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.wpcf7-form .wpcf7-mail-sent-ng::before {
+    content: "❌ ";
+}
+
+/* Spinner */
+.wpcf7-form .wpcf7-spinner {
+    margin-left: 0.5rem;
+}
+
+/* Loading state */
+.wpcf7-form.submitting input[type="submit"] {
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+
+.wpcf7-form.submitting input[type="submit"]::after {
+    content: " ⏳";
+}
+
+/* Dark mode messages */
+.dark .wpcf7-form .wpcf7-validation-errors {
+    background-color: #1f2937;
+    border-color: #ef4444;
+}
+
+.dark .wpcf7-form .wpcf7-mail-sent-ok {
+    background-color: #1f2937;
+    border-color: #10b981;
+    color: #34d399;
+}
+
+.dark .wpcf7-form .wpcf7-mail-sent-ng {
+    background-color: #1f2937;
+    border-color: #ef4444;
+    color: #fca5a5;
+}

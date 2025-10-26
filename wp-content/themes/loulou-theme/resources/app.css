@@ -1,0 +1,55 @@
+/*
+Theme Name: Loulou Confiture
+Theme URI:  https://loulouconfiture.com
+Author:     Your Name
+Author URI: https://yourwebsite.com
+Description: Custom theme for Loulou Confiture with Tailwind CSS
+Version:    1.0
+License:    GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: loulou-theme
+*/
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles */
+
+/* Mobile Navigation Styles */
+@layer components {
+    .mobile-menu-items {
+        @apply space-y-1;
+    }
+    
+    .mobile-menu-items li {
+        @apply block;
+    }
+    
+    .mobile-menu-items a {
+        @apply block px-3 py-2 text-base font-medium text-gray-700 dark:text-gray-300 hover:text-rose-600 dark:hover:text-rose-400 hover:bg-gray-50 dark:hover:bg-gray-800 rounded-md transition-colors;
+    }
+    
+    /* Desktop Navigation Link Styles */
+    #primary-menu a {
+        @apply hover:text-rose-600 dark:hover:text-rose-400 transition-colors font-medium;
+    }
+    
+    /* Mobile menu animation */
+    #mobile-menu {
+        @apply transition-all duration-300 ease-in-out;
+    }
+    
+    /* Footer Navigation Styles */
+    .footer-menu ul {
+        @apply list-none p-0 m-0;
+    }
+    
+    .footer-menu li {
+        @apply block;
+    }
+    
+    .footer-menu a {
+        @apply text-gray-300 hover:text-rose-400 transition-colors duration-200 block py-1;
+    }
+}

@@ -1,0 +1,12 @@
+{
+  "name": "loulou-theme",
+  "version": "1.0.0",
+  "description": "WordPress theme with Tailwind CSS",
+  "scripts": {
+    "dev": "tailwindcss -i ./resources/app.css -o ./style.css --watch",
+    "build": "tailwindcss -i ./resources/app.css -o ./style.css"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.3.0"
+  }
+}
