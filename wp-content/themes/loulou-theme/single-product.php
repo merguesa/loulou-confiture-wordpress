@@ -93,7 +93,7 @@ get_header(); ?>
                         
                         <?php if ($price) : ?>
                             <span class="text-3xl font-bold text-rose-600 dark:text-rose-400">
-                                <?php echo number_format((float)$price, 2, ',', ' '); ?>€
+                                <?php echo number_format((float)$price, 2, ',', ' '); ?> TND
                             </span>
                         <?php endif; ?>
                     </div>
@@ -224,7 +224,7 @@ get_header(); ?>
                                 $related_price = get_post_meta(get_the_ID(), '_product_price', true);
                                 if ($related_price) : ?>
                                     <p class="text-rose-600 dark:text-rose-400 font-bold">
-                                        <?php echo number_format((float)$related_price, 2, ',', ' '); ?>€
+                                        <?php echo number_format((float)$related_price, 2, ',', ' '); ?> TND
                                     </p>
                                 <?php endif; ?>
                             </div>

@@ -111,7 +111,7 @@ $products_query = new WP_Query(array(
                                 
                                 <?php if ($price) : ?>
                                     <span class="text-lg font-bold text-rose-600 dark:text-rose-400">
-                                        <?php echo number_format((float)$price, 2, ',', ' '); ?>€
+                                        <?php echo number_format((float)$price, 2, ',', ' '); ?> TND
                                     </span>
                                 <?php endif; ?>
                             </div>

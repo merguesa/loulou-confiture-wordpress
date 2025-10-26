@@ -27,6 +27,9 @@ wp-config-sample.php
 /wp-content/themes/
 !/wp-content/themes/loulou-theme/
 
+# Exclude node_modules in theme
+/wp-content/themes/loulou-theme/node_modules/
+
 # Logs
 *.log
 /wp-content/debug.log

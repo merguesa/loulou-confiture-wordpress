@@ -171,7 +171,7 @@ function loulou_product_details_callback($post) {
     ?>
     <table class="form-table">
         <tr>
-            <th scope="row"><label for="product_price"><?php _e('Prix (€)', 'loulou-theme'); ?></label></th>
+            <th scope="row"><label for="product_price"><?php _e('Prix (TND)', 'loulou-theme'); ?></label></th>
             <td><input type="number" step="0.01" id="product_price" name="product_price" value="<?php echo esc_attr($price); ?>" class="regular-text" /></td>
         </tr>
         <tr>
@@ -349,7 +349,7 @@ function loulou_products_shortcode($atts) {
                         <div class="flex items-center justify-between">
                             <?php if ($atts['show_price'] === 'yes' && $price) : ?>
                                 <span class="text-lg font-bold text-rose-600 dark:text-rose-400">
-                                    <?php echo number_format((float)$price, 2, ',', ' '); ?>€
+                                    <?php echo number_format((float)$price, 2, ',', ' '); ?> TND
                                 </span>
                             <?php endif; ?>
                             
