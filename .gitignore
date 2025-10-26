@@ -1,0 +1,64 @@
+# WordPress Core Files
+/wp-admin/
+/wp-includes/
+/wp-*.php
+/xmlrpc.php
+/license.txt
+/readme.html
+
+# WordPress Config
+wp-config.php
+wp-config-sample.php
+
+# Database
+*.sql
+*.sqlite
+
+# Uploads & Cache
+/wp-content/uploads/
+/wp-content/cache/
+/wp-content/upgrade/
+
+# Plugins (keep only our custom ones)
+/wp-content/plugins/
+!/wp-content/plugins/custom-*
+
+# Themes (keep only our custom theme)
+/wp-content/themes/
+!/wp-content/themes/loulou-theme/
+
+# Logs
+*.log
+/wp-content/debug.log
+
+# OS Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE Files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Node modules (if any)
+node_modules/
+npm-debug.log*
+
+# Temporary files
+*.tmp
+*.temp
+
+# Backup files
+*.bak
+*.backup
+
+# WordPress specific
+.htaccess
+sitemap.xml
+sitemap.xml.gz
